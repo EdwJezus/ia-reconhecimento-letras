@@ -17,7 +17,7 @@ Este projeto implementa um sistema de reconhecimento automático de letras (A-Z)
 ├── reconhece_imagem.py       # Script de reconhecimento
 ├── imagens_teste/            # Imagens para teste do modelo (letra_A.png, ..., letra_Z.png)
 ├── historico_treino.json     # Histórico de treino (acurácia e perda por época)
-├── grafico_treino.py         # Gera gráfico com base no histórico
+├── grafico_resultado.py      # Gera gráfico com base no histórico
 ├── requirements.txt          # Bibliotecas necessárias
 └── README.md                 # Este documento
 ```
