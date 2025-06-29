@@ -2,6 +2,7 @@ import tensorflow as tf
 import tensorflow_datasets as tfds
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Flatten, Dense
+import json
 
 ## 1 - carregando base de imagens emnist
 (ds_train, ds_test), ds_info = tfds.load(
@@ -47,7 +48,7 @@ model.compile(
 )
 
 ## 5 - treinando o modelo
-model.fit( ## começa o treinamento
+history = model.fit( ## começa o treinamento
     ds_train, ## vai aprender cm os dados do ds_train
     epochs=5, ## o modelo vai olhar todos os dados 5 vezes. a cada geração ele melhora
     validation_data=ds_test ## a cada geração o modelo é testado com os dados para ver como esta indo
@@ -55,3 +56,7 @@ model.fit( ## começa o treinamento
 
 ## 6 - salvando o modelo
 model.save('modelo_letras.h5') ## cerebro treinado com tudo que o modelo aprendeu
+
+## salva o historico em um arquivo JSON
+with open('historico_treino.json', 'w') as f:
+    json.dump(history.history, f)
