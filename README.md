@@ -2,12 +2,6 @@
 
 Este projeto implementa um sistema de reconhecimento automático de letras (A-Z), utilizando aprendizado de máquina com Keras e TensorFlow. O modelo foi treinado com o dataset **EMNIST Letters** e é capaz de identificar letras a partir de imagens de entrada em tons de cinza.
 
-## 👨‍💻 Desenvolvido por
-- Eduardo Jesus Antonio Pereira Peres  
-- Rebeca de Oliveira Maier  
-
----
-
 ## 📁 Estrutura do Projeto
 
 ```
@@ -111,16 +105,12 @@ As imagens em `imagens_teste/` foram extraídas diretamente do EMNIST para garan
 
 ---
 
-## 📚 Referências
-
-- [EMNIST Dataset – NIST](https://www.nist.gov/itl/products-and-services/emnist-dataset)
-- [Keras Documentation](https://keras.io/)
-- [TensorFlow Datasets](https://www.tensorflow.org/datasets)
-- [Professor Filipo – Códigos de Aula](https://github.com/ProfessorFilipo/PythonAI/tree/main/DeepLearning)
-
----
-
 ## 📝 Observações Finais
 
 - O projeto foi adaptado para usar imagens do próprio EMNIST na fase de teste, pois imagens externas (desenhadas manualmente) geravam baixo desempenho, mesmo com modelos mais complexos.
 - Após testes com CNNs, mais épocas e alterações de arquitetura, a versão atual (MLP simples) demonstrou excelente desempenho com EMNIST e foi mantida por simplicidade e eficiência.
+
+---
+
+## Licença
+MIT License © Eduardo Jesus
